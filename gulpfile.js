@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 //Добапвление префиксов
 const autoprefixer = require('gulp-autoprefixer');
-//Оптисизация стилей
+//Оптимизация стилей
 const cleanCSS = require('gulp-clean-css');
 //Оптимизация скриптов
 const uglify = require('gulp-uglify');
