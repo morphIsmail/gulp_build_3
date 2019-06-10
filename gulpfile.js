@@ -22,6 +22,8 @@ const less = require('gulp-less');
 const stylus = require('gulp-stylus');
 //Модуль для сжатия изображений
 const imagemin = require('gulp-imagemin');
+//Модуль переименовывания файлов
+const rename = require('gulp-rename');
 
 //Порядок подключения файлов со стилями
 const styleFiles = [
@@ -54,6 +56,9 @@ gulp.task('styles', () => {
          level: 2
       }))
       .pipe(sourcemaps.write('./'))
+      .pipe(rename({
+         suffix: '.min'
+      }))
       //Выходная папка для стилей
       .pipe(gulp.dest('./build/css'))
       .pipe(browserSync.stream());
@@ -65,10 +70,13 @@ gulp.task('scripts', () => {
    //Всей файлы по шаблону './src/js/**/*.js'
    return gulp.src(scriptFiles)
       //Объединение файлов в один
-      .pipe(concat('script.js'))
+      .pipe(concat('main.js'))
       //Минификация JS
       .pipe(uglify({
          toplevel: true
+      }))
+      .pipe(rename({
+         suffix: '.min'
       }))
       //Выходная папка для скриптов
       .pipe(gulp.dest('./build/js'))
