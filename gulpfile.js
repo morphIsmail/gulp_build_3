@@ -43,7 +43,7 @@ gulp.task('styles', () => {
    return gulp.src(styleFiles)
       .pipe(sourcemaps.init())
       //Указать stylus() , sass() или less()
-      .pipe(stylus())
+      .pipe(sass())
       //Объединение файлов в один
       .pipe(concat('style.css'))
       //Добавить префиксы
