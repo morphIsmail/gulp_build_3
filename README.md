@@ -45,5 +45,5 @@
 
 ## Благодарность автору ( ₽ ):
 __Сбербанк VISA:__ 4274 3200 3233 1582
-__Yandex:__ 410011260821995 - https://yasobe.ru/na/itdoctor  
+__Yandex:__ 410011260821995 https://yasobe.ru/na/itdoctor  
 __Станьте спонсором Youtube канала:__ https://www.youtube.com/channel/UC2Ev-rDSHBov0ZMChesLfrg/join
