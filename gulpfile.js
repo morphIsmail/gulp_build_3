@@ -15,7 +15,7 @@ const browserSync = require('browser-sync').create();
 //Для препроцессоров стилей
 const sourcemaps = require('gulp-sourcemaps');
 //Sass препроцессор
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 //Less препроцессор
 const less = require('gulp-less');
 //Stylus препроцессор
@@ -39,11 +39,11 @@ const scriptFiles = [
 //Таск для обработки стилей
 gulp.task('styles', () => {
    //Шаблон для поиска файлов CSS
-   //Всей файлы по шаблону './src/css/**/*.css'
+   //Все файлы по шаблону './src/css/**/*.css'
    return gulp.src(styleFiles)
       .pipe(sourcemaps.init())
-      //Указать stylus() , sass() или less()
-      .pipe(stylus())
+      //Указать stylus(), sass() или less()
+      .pipe(sass())
       //Объединение файлов в один
       .pipe(concat('style.css'))
       //Добавить префиксы
@@ -66,7 +66,7 @@ gulp.task('styles', () => {
 //Таск для обработки скриптов
 gulp.task('scripts', () => {
    //Шаблон для поиска файлов JS
-   //Всей файлы по шаблону './src/js/**/*.js'
+   //Все файлы по шаблону './src/js/**/*.js'
    return gulp.src(scriptFiles)
       //Объединение файлов в один
       .pipe(concat('main.js'))

@@ -37,13 +37,6 @@
 3. Выполнить команду: gulp (запуск таска default, который очистит каталог build и запустит таск scripts, styles и img-compress, а так же watch - отслеживает изменения в файлах html, css, sass, scss, less, styl, js и в каталоге img) 
 4. Писать свой код и наслаждаться автоматической сборкой проекта. 
 
-## Я, Исмаил Усеинов:
-* __YouTube канал ITDoctor:__ https://www.youtube.com/c/ITDoctor
-* __ВК:__ https://vk.com/morphop
-* __Группа в ВК:__ https://vk.com/itdoctorstudio
-* __Instagram:__ https://instagram.com/ismail_asanovich/
+---
 
-## Благодарность автору ( ₽ ):
-* __Сбербанк VISA:__ 4274 3200 3233 1582
-* __Yandex:__ 410011260821995 https://yasobe.ru/na/itdoctor  
-* __Станьте спонсором Youtube канала:__ https://www.youtube.com/channel/UC2Ev-rDSHBov0ZMChesLfrg/join
+[![GitHub](https://img.shields.io/badge/-Мой_GitHub-333?style=for-the-badge&logo=GitHub&logoColor=fff)](https://github.com/morphIsmail)
